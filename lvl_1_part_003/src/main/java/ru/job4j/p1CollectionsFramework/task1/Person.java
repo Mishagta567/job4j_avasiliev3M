@@ -1,4 +1,4 @@
-package ru.job4j.p1CollectionsFramework;
+package ru.job4j.p1CollectionsFramework.task1;
 
 public class Person {
 

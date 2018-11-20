@@ -1,7 +1,9 @@
-package ru.job4j.p1CollectionsFramework;
-
+package ru.job4j.p1CollectionsFramework.task1;
 
 import org.junit.Test;
+import ru.job4j.p1CollectionsFramework.task1.Person;
+import ru.job4j.p1CollectionsFramework.task1.PhoneDictionary;
+
 import java.util.List;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
@@ -17,4 +19,3 @@ public class PhoneDictionaryTest {
    }
 
 }
-
