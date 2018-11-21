@@ -1,4 +1,4 @@
-package ru.job4j.p1CollectionsFramework.task4;
+package ru.job4j.p1.task4;
 
 import org.junit.Test;
 import java.util.Arrays;

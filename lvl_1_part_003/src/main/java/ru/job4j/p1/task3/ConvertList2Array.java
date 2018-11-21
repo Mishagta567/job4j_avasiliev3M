@@ -1,4 +1,4 @@
-package ru.job4j.p1CollectionsFramework.task3;
+package ru.job4j.p1.task3;
 
 import java.util.List;
 

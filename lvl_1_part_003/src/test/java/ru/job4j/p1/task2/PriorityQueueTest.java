@@ -1,8 +1,6 @@
-package ru.job4j.p1CollectionsFramework.task2;
+package ru.job4j.p1.task2;
 
 import org.junit.Test;
-
-import java.util.LinkedList;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

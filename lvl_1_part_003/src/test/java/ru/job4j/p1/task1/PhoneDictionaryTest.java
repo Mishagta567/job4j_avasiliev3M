@@ -1,8 +1,6 @@
-package ru.job4j.p1CollectionsFramework.task1;
+package ru.job4j.p1.task1;
 
 import org.junit.Test;
-import ru.job4j.p1CollectionsFramework.task1.Person;
-import ru.job4j.p1CollectionsFramework.task1.PhoneDictionary;
 
 import java.util.List;
 import static org.hamcrest.core.Is.is;

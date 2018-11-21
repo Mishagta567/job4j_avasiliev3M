@@ -1,4 +1,4 @@
-package ru.job4j.p1CollectionsFramework.task2;
+package ru.job4j.p1.task2;
 
 import java.util.LinkedList;
 
