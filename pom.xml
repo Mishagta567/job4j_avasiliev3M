@@ -28,12 +28,19 @@
     </dependencies>
 
     <modules>
-        <module>lvl_1_part_001</module>
-        <module>lvl_1_part_002</module>
-        <module>lvl_1_part_003</module>
-        <module>lvl_3_part_001_Hibernate</module>
+
+        <module>lvl_1_part_0010_Start</module>
+        <module>lvl_1_part_0020_OOP</module>
+        <module>lvl_1_part_0030_CollectionsLite</module>
+
         <module>lvl_3_part_002_Spring</module>
         <module>lvl_3_part_002_Spring_2</module>
+        <module>lvl_3_part_0010_Hibernate</module>
+        <module>lvl_3_part_0020_Spring</module>
+
+
+
+
     </modules>
 
 
