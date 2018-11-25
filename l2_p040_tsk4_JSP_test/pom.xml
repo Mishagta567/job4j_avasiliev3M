@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lvl_2_part_0040_Serlvet</artifactId>
+        <artifactId>avasiliev3</artifactId>
         <groupId>ru.job4j</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ch_010_create_WEB_Ptoject</artifactId>
+    <artifactId>l2_p040_tsk4_JSP_test</artifactId>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
@@ -19,7 +19,6 @@
             <version>4.0.1</version>
             <scope>provided</scope> <!-- == we use it only for compelation. Not to run -->
         </dependency>
-
     </dependencies>
 
 </project>

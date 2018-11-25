@@ -6,7 +6,7 @@
 
     <groupId>ru.job4j</groupId>
     <artifactId>avasiliev3</artifactId>
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -28,15 +28,19 @@
     </dependencies>
 
     <modules>
-        <module>lvl_1_part_0010_Start</module>
-        <module>lvl_1_part_0020_OOP</module>
-        <module>lvl_1_part_0030_CollectionsLite</module>
+        <module>l1_p020_OOP</module>
+        <module>l1_p030_Collections_Lite</module>
+
+        <module>lvl_1_part_0030_CollectionsLite</module> <!-- скопировать тесты и удалить -->
 
         <module>lvl_3_part_002_Spring</module>
         <module>lvl_3_part_002_Spring_2</module>
-        <module>lvl_3_part_0010_Hibernate</module>
         <module>lvl_3_part_0020_Spring</module>
-        <module>lvl_2_part_0040_Serlvet</module>
+
+        <module>l1_p030_Collections_Lite</module>
+        <module>l2_p040_tsk1_webProject</module>
+        <module>l2_p040_tsk4_JSP_test</module> <!-- delete -->
+
     </modules>
 
 </project>

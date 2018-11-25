@@ -12,8 +12,6 @@
     <artifactId>lvl_3_part_0020_Spring</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>IoC_1</module>
-        <module>IoC_2</module>
         <module>MVC_cars_1</module>
     </modules>
 

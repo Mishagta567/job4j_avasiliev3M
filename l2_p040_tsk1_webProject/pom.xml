@@ -9,10 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lvl_2_part_0040_Serlvet</artifactId>
-    <packaging>war</packaging>
-    <modules>
-        <module>ch_010_create_WEB_Ptoject</module>
-    </modules>
+    <artifactId>l2_p040_tsk1_webProject</artifactId>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope> <!-- == we use it only for compelation. Not to run -->
+        </dependency>
+    </dependencies>
 
 </project>
