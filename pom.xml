@@ -6,7 +6,7 @@
 
     <groupId>ru.job4j</groupId>
     <artifactId>avasiliev3</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -39,7 +39,8 @@
 
         <module>l1_p030_Collections_Lite</module>
         <module>l2_p040_tsk1_webProject</module>
-        <module>l2_p040_tsk4_JSP_test</module> <!-- delete -->
+        <module>l2_p040_tsk4_JSP_test</module>
+        <module>l3_p020_tsk3_Spring_Data</module> <!-- delete -->
 
     </modules>
 
