@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>lvl_3_part_002_Spring_2</artifactId>
     <packaging>pom</packaging>
 
     <!-- https://mvnrepository.com/artifact/org.springframework/spring: -->
@@ -38,5 +39,4 @@
 
     </dependencies>
 
-    <artifactId>lvl_3_part_002_Spring_2</artifactId>
 </project>
