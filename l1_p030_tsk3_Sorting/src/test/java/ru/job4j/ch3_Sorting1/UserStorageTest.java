@@ -23,14 +23,8 @@ public class UserStorageTest {
       List<User> allUser = userStorage.getAllUsers();
       Assert.assertThat(allUser.get(0).getName(), is("Ivan"));
 
-      allUser = userStorage.sort(allUser);
+      allUser = userStorage.sortList(allUser);
       Assert.assertThat(allUser.get(0).getName(), is("Alex"));
-
-      /*for (User user : allUser) {
-         System.out.println(user);
-      }*/
-
-      //Assert.assertThat(userStorage.getAllUsers().size(), is(4));
 
    }
 

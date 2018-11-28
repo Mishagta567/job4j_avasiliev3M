@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class UserStorage { // implements Comparator {
+public class UserStorage { // implements Comparator<User> {
    List<User> allUsers = new ArrayList<User>();
 
    public void add(User user) {
@@ -16,13 +16,12 @@ public class UserStorage { // implements Comparator {
       return allUsers;
    }
 
-   public List<User> sort(List<User> list) {
+   public List<User> sortList(List<User> list) {
       list.sort(
             new Comparator<User>() {
                int rslt;
                @Override
                public int compare(User o1, User o2) {
-                  //return o1.name.length().compareTo(o2.name.length());  // почему-то не дает
                   rslt = o1.getAge() - o2.getAge();
                   if (rslt == 0) {
                      rslt = o1.getName().compareTo(o2.getName());
