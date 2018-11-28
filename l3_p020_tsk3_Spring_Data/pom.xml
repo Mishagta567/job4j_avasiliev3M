@@ -10,62 +10,103 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>l3_p020_tsk3_Spring_Data</artifactId>
 
+
+    <properties>
+        <hibernate-version>5.3.7.Final</hibernate-version>
+        <spring-framework-version>5.1.1.RELEASE</spring-framework-version>
+        <spring-data-version>Gosling-RELEASE</spring-data-version>
+    </properties>
+
+
+
     <!-- https://mvnrepository.com/artifact/org.springframework/spring: -->
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>5.1.1.RELEASE</version>
+            <version>${spring-framework-version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>${spring-framework-version}</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>2.1.2.RELEASE</version>
         </dependency>
 
-
-
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <!--AOP. Need for Spring Data JPA -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.4.0.CR1</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring-framework-version}</version>
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-version}</version>
+        </dependency>
 
+        <!-- Joda-Time - API uses in Spring Data-->
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time-hibernate -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time-hibernate</artifactId>
+            <version>1.4</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
@@ -74,7 +115,13 @@
             <version>42.2.5</version>
         </dependency>
 
-    </dependencies>
+        <!-- Support methods from google. For example 'Lists.newArrayList()'-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
 
+    </dependencies>
 
 </project>
