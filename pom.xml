@@ -29,20 +29,18 @@
 
     <modules>
         <module>l1_p020_OOP</module>
+        <module>l1_p030_tsk3_Sorting</module> <!-- delete -->
+        <module>l1_p030_Collections_Lite</module>
         <module>l1_p030_Collections_Lite</module>
 
-        <module>lvl_1_part_0030_CollectionsLite</module> <!-- скопировать тесты и удалить -->
-
-        <module>lvl_3_part_002_Spring</module>
-        <module>lvl_3_part_002_Spring_2</module>
-        <module>lvl_3_part_0020_Spring</module>
-
-        <module>l1_p030_Collections_Lite</module>
         <module>l2_p040_tsk1_webProject</module>
         <module>l2_p040_tsk4_JSP_test</module>
+
         <module>l3_p020_tsk3_Spring_Data</module>
         <module>l3_p030_tsk1_IO</module>
-        <module>l1_p030_tsk3_Sorting</module> <!-- delete -->
+
+        <module>l3_p040_tsk2_010_CarsAds</module>
+
 
     </modules>
 

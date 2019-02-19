@@ -6,6 +6,7 @@ import ru.job4j.tsk3_example.intf.ContactService;
 
 import java.util.List;
 
+// Это не сработало. Нужно искать другой пример.
 public class Main {
 
    public static void main(String[] args) {

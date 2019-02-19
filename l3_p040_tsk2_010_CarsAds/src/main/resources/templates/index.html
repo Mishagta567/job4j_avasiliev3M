@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Tasks</h1>
+        <table>
+            <thead>
+            <tr>
+                <th> User </th>
+                <th> Task </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${tasks.empty}">
+                <td colspan="2"> No Tasks Available </td>
+            </tr>
+            <tr th:each="task : ${tasks}">
+                <td><span th:text="${task.user}"> User </span></td>
+                <td><span th:text="${task.description}"> Task </span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<script type="text/javascript"
+        src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
