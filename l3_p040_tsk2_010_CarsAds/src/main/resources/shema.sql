@@ -7,9 +7,9 @@ CREATE TABLE public.users
    email character varying(200)
    --, inserted_date TIMESTAMP
 );
-INSERT INTO users (login, password, name, email) VALUES('alexandr', '123', 'Alex',  'alex@mail.ru'); -- CURRENT_TIMESTAMP(0),
-INSERT INTO users (login, password, name, email) VALUES('agent007', '123', 'Agent 007', '007@mail.ru');
-INSERT INTO users (login, password, name, email) VALUES('agent009', '123', 'Agent KGB', 'kgb@mail.ru');
+INSERT INTO users (id, login, password, name, email) VALUES(11, 'alexandr', '123', 'Alex',  'alex@mail.ru'); -- CURRENT_TIMESTAMP(0),
+INSERT INTO users (id, login, password, name, email) VALUES(12, 'agent007', '123', 'Agent 007', '007@mail.ru');
+INSERT INTO users (id, login, password, name, email) VALUES(13, 'agent009', '123', 'Agent KGB', 'kgb@mail.ru');
 
 
 CREATE TABLE cars_brand (
