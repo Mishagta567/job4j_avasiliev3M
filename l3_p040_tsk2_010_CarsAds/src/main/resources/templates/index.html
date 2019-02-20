@@ -1,43 +1,35 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Task list</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>showCustomers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css"
-          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
-
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 <body>
+<h2>List of All Customers</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+
+    <tr th:each="user : ${allUsers}">
+        <td><span th:text="${user.login}"> login </span></td>
+        <td><span th:text="${user.password}"> password </span></td>
+        <td><span th:text="${user.name}"> name </span></td>
+        <td><span th:text="${user.email}"> email </span></td>
+    </tr>
+
+    </thead>
 
 
-<div class="container">
+</table>
 
-    <div class="starter-template">
-        <h1>Tasks</h1>
-        <table>
-            <thead>
-            <tr>
-                <th> User </th>
-                <th> Task </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:if="${tasks.empty}">
-                <td colspan="2"> No Tasks Available </td>
-            </tr>
-            <tr th:each="task : ${tasks}">
-                <td><span th:text="${task.user}"> User </span></td>
-                <td><span th:text="${task.description}"> Task </span></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-</div>
-<!-- /.container -->
-
-<script type="text/javascript"
-        src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
