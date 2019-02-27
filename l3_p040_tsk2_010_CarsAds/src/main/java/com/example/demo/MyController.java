@@ -18,7 +18,6 @@ public class MyController {
         List<Users> allUsers = (List<Users>) usersService.findAll();
 
         model.addAttribute("allUsers", allUsers);
-
         return "showUsers";
     }
 

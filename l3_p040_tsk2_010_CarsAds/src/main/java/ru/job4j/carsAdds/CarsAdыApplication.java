@@ -1,13 +1,13 @@
-package com.example.demo;
-// done
+package ru.job4j.carsAdds;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-//// comment Demo
+
 @SpringBootApplication
-public class DemoApplication {
+public class CarsAdыApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(CarsAdыApplication.class, args);
 	}
 
 }

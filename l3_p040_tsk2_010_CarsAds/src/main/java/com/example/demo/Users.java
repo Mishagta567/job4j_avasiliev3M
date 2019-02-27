@@ -1,5 +1,5 @@
 package com.example.demo;
-
+// done
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

@@ -13,8 +13,8 @@ public class UsersService implements IUsersService {
     @Override
     public List<Users> findAll() {
 
-        List<Users> cities = (List<Users>) repository.findAll();
+        List<Users> allUsers = (List<Users>) repository.findAll();
 
-        return cities;
+        return allUsers;
     }
 }
